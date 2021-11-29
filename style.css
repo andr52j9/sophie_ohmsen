@@ -1,0 +1,124 @@
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+header nav ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+  padding-bottom: 0.4rem;
+}
+
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  padding: 1rem 1rem;
+  box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.5);
+  align-items: baseline;
+  overflow-x: auto;
+  justify-content: space-between;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  background-color: palevioletred;
+}
+
+#first_section {
+  grid-column: 1/4;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  background-image: url(billeder/d.jpeg);
+  background-size: cover;
+  background-position: 50% 10%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+#first_section .section_wrapper {
+  display: grid;
+  grid-column: 1.5/6;
+  grid-row: 1/5;
+  object-fit: cover;
+  font-size: 7rem;
+  color: white;
+  font-style: italic;
+}
+
+#second_section {
+  font-size: 1.3rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+#third_section .section_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+}
+
+body {
+  background: hsl(255 75% 95%);
+  color: hsl(255 75% 10%);
+  transition: 1s;
+}
+
+body.dark {
+  background: hsl(255 75% 10%);
+  color: hsl(255 75% 95%);
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  transition: 1s;
+  background: hsl(255 75% 95%);
+  color: hsl(255 75% 10%);
+}
+
+.dark .banner {
+  background: hsl(255 75% 10%);
+  color: hsl(255 75% 95%);
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+figure {
+  order: -1;
+}
+
+.mode {
+  background: hsl(255, 75%, 10%);
+  transition: 1s;
+}
+
+.mode:hover {
+  background: hsl(255, 75%, 25%);
+}
+
+.dark .mode:hover {
+  background: hsl(255, 75%, 65%);
+}
+
+.dark .mode {
+  background: hsl(255, 75%, 60%);
+}
